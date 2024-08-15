@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Converter</title>
+    <link rel="stylesheet" href="styles.css"> <!-- CSS 파일 링크 -->
+</head>
+<body>
+    <h1>ASCII Art Converter</h1>
+    <div class="controls">
+        <input type="file" id="image-input" accept="image/*">
+        
+        <label>
+            <input type="checkbox" id="color-toggle">
+            Color Mode
+        </label>
+        
+        <label>
+            Resolution: <span id="resolution-value">100</span>
+            <input type="range" id="resolution-slider" min="10" max="300" value="100">
+        </label>
+
+        <label>
+            <input type="checkbox" id="inverse-toggle">
+            Inverse Mode
+        </label>
+    </div>
+    
+    <pre id="ascii-output"></pre>
+    <script src="script.js"></script>
+</body>
+</html>
